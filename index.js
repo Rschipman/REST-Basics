@@ -1,14 +1,5 @@
-const express = require("express");
-const app = express();
-
-app.get("/tacos", (req, res) => {
-  res.send("GET /tacos request");
-});
-
-app.post("/tacos", (req, res) => {
-  res.send("POST /tacos request");
-});
-
-app.listen(3000, () => {
-  console.log("Listening on Port 3000");
-});
+GET /comments - list all comments 
+POST /comments - create a new comment
+GET /commments/:id - get one comment (using ID)
+PATCH /comments/:id - update one comment
+DELETE /comments/:id destroy one comment
